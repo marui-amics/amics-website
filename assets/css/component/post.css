@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+/* ---------------------------------------------------------
+  投稿 スタイル
+--------------------------------------------------------- */
+
+/* 最初の要素だけ上部余白を適用しない */
+#js-post > :first-child {
+  margin-top: 0;
+}
+
+.c-post {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/*
+  見出し
+---------------------------------------------- */
+.c-post .c-postEditor h1,
+.c-post .c-postEditor h2,
+.c-post .c-postEditor h3,
+.c-post .c-postEditor h4,
+.c-post .c-postEditor h5 {
+  line-height: 1.5;
+}
+
+.c-post .c-postEditor h1 {
+  font-size: 28px;
+  margin-top: 1.429em;
+  margin-bottom: 0.857em;
+}
+
+.c-post .c-postEditor h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-top: 2.667em;
+  margin-bottom: 1.667em;
+  padding: 0 0.667em 0.333em 0.667em;
+  border-left: 8px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.c-post .c-postEditor h3 {
+  font-size: 20px;
+  margin-top: 1.6em;
+  margin-bottom: 1.2em;
+  padding: 0 0 0.4em;
+  border-bottom: 1px solid #000;
+}
+
+.c-post .c-postEditor h4 {
+  font-size: 16px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.c-post .c-postEditor h5 {
+  font-size: 14px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+/*
+  段落
+---------------------------------------------- */
+.c-post .c-postEditor p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+/*
+  画像
+---------------------------------------------- */
+.c-post .c-postEditor img {
+  max-width: 100%;
+  width: auto;
+  box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+
+/*
+  リスト
+---------------------------------------------- */
+.c-post .c-postEditor ul,
+.c-post .c-postEditor ol {
+  padding-left: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+/*
+  図表、挿絵
+---------------------------------------------- */
+.c-post .c-postEditor figure {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.c-post .c-postEditor figcaption {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/*
+  テーブル
+---------------------------------------------- */
+.c-post .c-postEditor table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  overflow-x: scroll;
+  display: block;
+  padding-bottom: 16px;
+}
+
+.c-post .c-postEditor th,
+.c-post .c-postEditor td {
+  padding: 8px 16px;
+  border: 1px solid;
+}
+
+.c-post .c-postEditor tr:first-child th {
+  color: #fff;
+  background-color: #000;
+}
+
+.c-post .c-postEditor th {
+  color: #fff;
+  background-color: #4b4b50;
+  min-width: 200px;
+}
+
+.c-post .c-postEditor table p {
+  margin: 0;
+}
+
+/*
+  テキストリンク
+---------------------------------------------- */
+.c-post .c-postEditor a {
+  text-decoration: underline;
+}
+
+.c-post .c-postEditor a[target="_blank"] {
+  display: inline-block;
+  padding-right: calc(4px + 1em + 4px);
+  position: relative;
+  margin: 0 4px;
+}
+
+.c-post .c-postEditor a[target="_blank"]::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("../../images/icon_external_link_bk.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(1em * 1.7 / 2);
+  transform: translateY(-50%);
+  right: 4px;
+}
+
+/*
+  インラインコード
+---------------------------------------------- */
+.c-post .c-postEditor code {
+  font-family: "Source Code Pro", monospace;
+}
+
+.c-post .c-postEditor p code {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #272a36;
+  border-radius: 2px;
+  margin: 0 4px;
+  position: relative;
+  top: -2px;
+}
+
+/*
+  コードブロック
+---------------------------------------------- */
+.c-post .c-codeBlock {
+  position: relative;
+}
+
+.c-post .c-codeBlock pre {
+  color: #f8f8f2;
+  background-color: #272a36;
+  border-radius: var(--border-radius-primary);
+  padding: 56px 24px 0 24px;
+  overflow: scroll;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.c-post .c-codeBlock .js-copyText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.c-post .c-codeBlock .js-copyText img {
+  border-radius: 0;
+  box-shadow: inherit;
+}
+
+.c-post .c-postEditor [data-filename] {
+  position: relative;
+}
+
+.c-post .c-postEditor [data-filename]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../images/icon_file_wh.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  z-index: 1;
+}
+
+.c-post .c-postEditor [data-filename]::after {
+  color: #fff;
+  font-size: 14px;
+  content: attr(data-filename);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  padding: 8px 40px;
+  border-radius: 4px 4px 0 0;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+  引用
+---------------------------------------------- */
+.c-post .c-postEditor blockquote {
+  padding: 40px 32px;
+  position: relative;
+  background-color: #fafafa;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.c-post .c-postEditor blockquote::before,
+.c-post .c-postEditor blockquote::after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+.c-post .c-postEditor blockquote::before {
+  background-image: url("../../images/icon_quote_left.svg");
+  top: -8px;
+  left: 16px;
+}
+
+.c-post .c-postEditor blockquote::after {
+  background-image: url("../../images/icon_quote_right.svg");
+  bottom: -8px;
+  right: 16px;
+}
+
+.c-post .c-postEditor blockquote p {
+  font-size: 0.875em;
+}
+
+.c-post .c-postEditor blockquote p + p {
+  margin-top: 1.5em;
+}
+
+/*
+  区切り線
+---------------------------------------------- */
+.c-post .c-postEditor hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-post {
+    font-size: 16px;
+  }
+
+  /*
+  見出し
+  ---------------------------------------------- */
+  .c-post .c-postEditor h1,
+  .c-post .c-postEditor h2,
+  .c-post .c-postEditor h3,
+  .c-post .c-postEditor h4 {
+    line-height: 1.5;
+  }
+
+  .c-post .c-postEditor h1 {
+    font-size: 32px;
+  }
+
+  .c-post .c-postEditor h2 {
+    font-size: 28px;
+    border-left: 16px solid #000;
+    margin-top: 4.286em;
+  }
+
+  .c-post .c-postEditor h3 {
+    font-size: 24px;
+    margin-top: 3.333em;
+  }
+
+  .c-post .c-postEditor h4 {
+    font-size: 18px;
+  }
+
+  .c-post .c-postEditor h5 {
+    font-size: 16px;
+  }
+
+  /*
+  図表、挿絵
+  ---------------------------------------------- */
+  .c-post .c-postEditor figcaption {
+    font-size: 14px;
+  }
+}

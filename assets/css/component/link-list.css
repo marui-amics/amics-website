@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+  リンク一覧 パーツ
+--------------------------------------------------------- */
+
+.c-linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.c-linkList__contents {
+  color: var(--color-text-main);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 16px calc(8px + 24px + 4px) 16px 16px;
+  background-color: transparent;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-linkList__contents::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icon_arrow_right_bk.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+/* 外部リンクのアイコン */
+.c-linkList__contents--external::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../images/icon_external_link_bk.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+/* 下線スタイル */
+.c-linkList--underLine {
+  gap: 0;
+}
+
+.c-linkList--underLine .c-linkList__contents {
+  border: none;
+  border-bottom: 1px solid var(--color-border-primary);
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .c-linkList {
+    gap: 16px;
+  }
+
+  .c-linkList__contents {
+    font-size: 16px;
+    padding: 24px calc(16px + 24px + 4px) 24px 24px;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .c-linkList__contents::after {
+    right: 16px;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .c-linkList__contents:hover {
+    color: var(--color-button-text);
+    font-weight: bold;
+    background-color: var(--color-accent-primary);
+  }
+
+  .c-linkList__contents:hover::after {
+    background-image: url("../../images/icon_arrow_right_wh.svg");
+    transform: translate(8px, -50%);
+  }
+
+  /* 外部リンクのアイコン */
+  .c-linkList__contents--external:hover::after {
+    background-image: url("../../images/icon_external_link_wh.svg");
+    transform: translateY(-50%);
+  }
+
+  /* 下線スタイル */
+  .c-linkList--underLine {
+    gap: 0;
+  }
+}

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+  コラムページ 独自スタイル
+--------------------------------------------------------- */
+.p-columnPost {
+  padding: 64px 0 80px;
+}
+
+.p-columnThumbnail {
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-primary);
+  border-radius: var(--border-radius-primary);
+  overflow: hidden;
+}
+
+.p-columnThumbnail img {
+  width: 100%;
+}
+
+.p-columnPostDate {
+  display: flex;
+  gap: 24px;
+}
+
+.p-columnBottomLink {
+  margin-top: 40px;
+  border-top: 1px solid var(--color-border-primary);
+  padding-top: 24px;
+}
+
+/* 投稿記事 */
+.p-columnPostHeader {
+  padding-bottom: 8px;
+  margin-bottom: 48px;
+}
+
+.p-columnPostTitle {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--color-border-light);
+  padding-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.p-columnPostCategories {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.p-columnCategoryTitle {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-columnPost {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .p-columnCategoryTitle {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}

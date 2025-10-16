@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+  ボタンパーツ
+--------------------------------------------------------- */
+
+.c-button {
+  color: var(--color-button-text);
+  line-height: 1.5;
+  background-color: var(--color-button-bg);
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
+  padding: 24px calc(24px + 24px + 8px) 24px 40px;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
+}
+
+.c-button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icon_arrow_right_wh.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.c-button:hover::after {
+  transform: translate(8px, -50%);
+}
+
+/* 外部リンク用 */
+.c-button--external {
+  transition: 0.3s all ease-in-out;
+}
+
+.c-button--external::after {
+  width: 16px;
+  height: 16px;
+  background-image: url("../../images/icon_external_link_wh.svg");
+}
+
+.c-button--external:hover {
+  opacity: 0.7;
+}
+
+.c-button--external:hover::after {
+  transform: translateY(-50%);
+}

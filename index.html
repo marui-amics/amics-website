@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANTAN! CMS STARTER for Beginner</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/foundation/reset.css" />
+    <link rel="stylesheet" href="./assets/css/foundation/theme.css" />
+    <link rel="stylesheet" href="./assets/css/foundation/base.css" />
+    <link rel="stylesheet" href="./assets/css/layout/wrapper.css" />
+    <link rel="stylesheet" href="./assets/css/layout/container.css" />
+    <link rel="stylesheet" href="./assets/css/layout/main.css" />
+    <link rel="stylesheet" href="./assets/css/layout/section.css" />
+    <link rel="stylesheet" href="./assets/css/layout/heading.css" />
+    <link rel="stylesheet" href="./assets/css/layout/header.css" />
+    <link rel="stylesheet" href="./assets/css/layout/footer.css" />
+    <link rel="stylesheet" href="./assets/css/component/card.css" />
+    <link rel="stylesheet" href="./assets/css/component/button.css" />
+    <link rel="stylesheet" href="./assets/css/component/step.css" />
+    <link rel="stylesheet" href="./assets/css/component/news.css" />
+    <link rel="stylesheet" href="./assets/css/component/column-list.css" />
+    <link rel="stylesheet" href="./assets/css/component/link-list.css" />
+    <link rel="stylesheet" href="./assets/css/utility/screen-reader-text.css" />
+    <link rel="stylesheet" href="./assets/css/utility/display.css" />
+    <link rel="stylesheet" href="./assets/css/utility/text-align.css" />
+    <link rel="stylesheet" href="./assets/css/utility/text-link.css" />
+    <link rel="stylesheet" href="./assets/css/utility/list.css" />
+    <link rel="stylesheet" href="./assets/css/utility/margin.css" />
+    <link rel="stylesheet" href="./assets/css/utility/font-size.css" />
+    <link rel="stylesheet" href="./assets/css/pages/top.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/js/library/swiper@9.3.2/swiper-bundle.min.css"
+    />
+    <!-- / CSS -->
+    <!-- js -->
+    <script src="./assets/js/library/jquery/jquery-3.7.0.min.js" defer></script>
+    <script
+      src="./assets/js/library/swiper@9.3.2/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script type="module" src="./assets/js/common.js" defer></script>
+    <script type="module" src="./assets/js/index.js" defer></script>
+    <!-- / js -->
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header" id="js-header">
+        <div class="l-header__container">
+          <h1 class="l-header__siteName">
+            <a class="l-header__siteNameLink" href="/">
+              <img
+                src="./assets/images/logo.svg"
+                alt="KANTAN! CMS STARTER for Beginner"
+                width="190"
+                height="28"
+              />
+            </a>
+          </h1>
+
+          <button class="l-headerMobileButton" id="js-mobileMenuButton">
+            <span class="l-headerMobileButton__line">
+              <span class="u-screenReaderText">メニューを開閉する</span>
+            </span>
+          </button>
+
+          <div class="l-headerMenuWrapper" id="js-mobileMenu">
+            <nav class="l-headerMenu">
+              <ul class="l-headerMenuList">
+                <li class="l-headerMenuList__item">
+                  <a class="l-headerMenuList__link" href="./about-functions/"
+                    >機能紹介</a
+                  >
+                </li>
+                <li class="l-headerMenuList__item">
+                  <a class="l-headerMenuList__link" href="./flow/"
+                    >公開までの流れ</a
+                  >
+                </li>
+                <li class="l-headerMenuList__item">
+                  <a class="l-headerMenuList__link" href="./column/"
+                    >お役立ちコラム</a
+                  >
+                </li>
+                <li class="l-headerMenuList__item l-headerMenuList__item--cta">
+                  <a
+                    class="l-headerMenuList__ctaLink"
+                    href="https://templates.microcms.io/templates/detail/de25a5ff-5731-42b0-ac35-6fafdf7ff143"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >テンプレートから作成</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="l-main">
+        <div class="p-mainViual">
+          <div class="swiper js-mainVisualSwiper" id="js-setMainVisual"></div>
+          <p class="p-mainViual__text">
+            <span>HTMLとCSSとjQueryでつくる。</span>
+            <span>コンテンツ管理ができる。</span>
+            <span>すばやく公開する。</span>
+          </p>
+        </div>
+
+        <!-- 導入 -->
+        <section class="l-sectionPrimary">
+          <div class="l-container">
+            <h2 class="l-headingPrimary">
+              CMSなのに<br
+                class="u-display-spOnly"
+              />難しい技術はいらない<br />必要なのはHTMLとCSSだけ
+            </h2>
+            <div class="p-topIntroductionTextContents">
+              <p>
+                お知らせ機能をつけるだけなのにWordPressで作る必要はない。<br />CMSを作るためにPHPを勉強しなくても良い。
+              </p>
+              <p>
+                必要なのはHTMLとCSSの知識だけ。<br />機能を頑張りたい人はjQueryができれば良し。
+              </p>
+              <p>
+                サーバーだってなんでも良い。<br />サクッと構築して、サクッと公開しよう。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 特徴 -->
+        <section class="l-sectionPrimary l-sectionPrimary--bgSecondary">
+          <div class="l-container">
+            <h2 class="l-headingPrimary">
+              目指したのは<br />開発のベースになる<br
+                class="u-display-spOnly"
+              />テンプレート
+            </h2>
+
+            <ul class="p-topFeatureList">
+              <li>
+                <section class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">シンプル イズ ザ ベスト。</h3>
+                      <p class="c-card__text">
+                        シンプルデザインで汎用性高し。<br />HTMLとCSSで自分好みにカスタマイズしよう。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">
+                        カスタマイズもカンタン。デフォルトの機能いろいろ。
+                      </h3>
+                      <p class="c-card__text">
+                        スライドショーができるSwiperを搭載。共通パーツ用のclassも用意しているので、HTMLを少し書き換えるだけでもOK。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">
+                        jQueryを触りたくなければそれも良し。
+                      </h3>
+                      <p class="c-card__text">
+                        テンプレートだからデザイン以外は完成済み。jQueryを使っているけど、CMSの機能でいじる機会はほぼなし。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">
+                        お問い合わせ機能もHTMLの知識だけ。
+                      </h3>
+                      <p class="c-card__text">
+                        お問い合わせ機能は外部フォームサービスを使用するから、HTMLでフォームを作るだけ。もちろんGoogle
+                        Formを埋め込んでもいい。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">
+                        サーバーに制限なし。<br />選ぶのは君だ。
+                      </h3>
+                      <p class="c-card__text">
+                        サーバーにPHPやMySQLのようなソフトウェアが入っている必要はない。WEBサーバーであれば無料のものでもなんでもいい。選ばれるのではなく、自分で選ぶのだ。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </li>
+              <li>
+                <section class="c-card">
+                  <div class="c-card__inner">
+                    <div class="c-card__textContents">
+                      <h3 class="c-card__title">
+                        話題のヘッドレスCMSですばやく構築、公開。
+                      </h3>
+                      <p class="c-card__text">
+                        microCMSによるコンテンツ管理で、ラクラク入稿。<br />テンプレート機能ですばやく構築できる。
+                      </p>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </ul>
+
+            <div class="u-text-center u-mt-sp-48 u-mt-tab-64">
+              <a class="c-button" href="./about-functions/"
+                >機能について詳しく見る</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- 流れ -->
+        <section class="l-sectionPrimary">
+          <div class="l-container l-container--medium">
+            <h2 class="l-headingPrimary">サイトの構築から公開まで</h2>
+            <div class="u-text-center u-mb-sp-40">
+              <p class="u-mb-sp-24">
+                コードエディタはVisual Studio Code（以下 VSCode）を前提に<br />
+                ローカルサーバを立ち上げるのに<a
+                  href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+                  class="u-link-external"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Server</a
+                >プラグインを使用する。
+              </p>
+              <p>事前にインストールしておこう。</p>
+            </div>
+            <ol class="p-topFlow c-step">
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">
+                    連携する各アカウントの確認・登録
+                  </dt>
+                  <dd class="c-step__text">
+                    <p>
+                      コンテンツ管理に「<a
+                        href="https://app.microcms.io"
+                        class="u-link-external"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >microCMS</a
+                      >」を使用しているので、初めての人は事前にアカウント登録をしておこう。
+                    </p>
+                    <p>
+                      また、テンプレートのHTMLとCSSはビッグバンのように無から生まれるわけではない。<br />オンラインでソースコードを管理・共有できるサービス、「<a
+                        href="https://github.co.jp/"
+                        class="u-link-external"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >GitHub</a
+                      >」を使用しての連携が必要となる。<br />こちらもアカウントをまだ持っていなければ登録しておこう。
+                    </p>
+                    <p>なにごとも準備は大事だ。</p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">テンプレートのセットアップ</dt>
+                  <dd class="c-step__text">
+                    <p>
+                      <a
+                        class="u-link-external"
+                        href="https://templates.microcms.io/templates/detail/de25a5ff-5731-42b0-ac35-6fafdf7ff143"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >microCMSのテンプレートサービス</a
+                      >にアクセスしよう。
+                    </p>
+                    <p>
+                      「このテンプレートを利用」のボタンで次のページに進み、GitHubと連携を行おう。<br />連携時の設定は全てデフォルトでOK。
+                    </p>
+                    <figure>
+                      <img
+                        src="./assets/images/img_flow_02.jpg"
+                        alt=""
+                        width=""
+                        height=""
+                      />
+                      <figcaption>GitHub連携後の設定</figcaption>
+                    </figure>
+                    <p>
+                      画像を参考に必要な項目の設定を行う。<br />ソースコードをオンラインで公開したくない場合は、「プライベートリポジトリとして作成する」にチェックを入れて次に進もう。
+                    </p>
+                    <p>
+                      問題なければセットアップが完了して、microCMSのサービスとGitHubのリポジトリが自動で作成されているはず。<br />この画面の内容は後ほど使うのでまだ閉じないでおこう。
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">ソースコードの準備</dt>
+                  <dd class="c-step__text">
+                    <p>
+                      セットアップ完了画面に表示されているGitHubのページに移動して、ファイルをダウンロード・解凍しよう。
+                    </p>
+                    <p>
+                      VSCodeのアプリアイコンにフォルダごとドラッグ＆ドロップするとプロジェクトをエディタで開くことができる。
+                    </p>
+                    <p>
+                      Live
+                      Serverの拡張機能が入っていてフォルダごと開いていれば、VSCodeの右下に「Go
+                      Live」というリンクが出るので、こちらをクリックしてローカルサーバを立ち上げよう。
+                    </p>
+                    <figure>
+                      <img
+                        src="./assets/images/img_flow_03.png"
+                        alt=""
+                        width=""
+                        height=""
+                      />
+                      <figcaption>Live Serverを立ち上げる</figcaption>
+                    </figure>
+                    <p>
+                      ローカルサーバ起動中はmicroCMSとの通信が可能となり、コードの更新も自動で反映されるので、開発時は基本的に立ち上げておく必要がある。
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">microCMSと連携</dt>
+                  <dd class="c-step__text">
+                    <p>
+                      <code>/assets/js/microcms.template.js</code
+                      >というファイルがあるので、ファイルごとコピーしてファイル名を<code>microcms.template.js</code>から<code>microcms.js</code>に変更しよう。
+                    </p>
+                    <p>
+                      <code>microcms.js</code
+                      >を開き、<code>SERVICE_ID</code>と<code>API_KEY</code>を入力して保存すれば完了だ。
+                    </p>
+                    <p>
+                      <code>SERVICE_ID</code
+                      >と<code>API_KEY</code>はセットアップ完了時の画面で取得できる。<br />もしも間違えて画面を閉じてしまったらmicroCMSにアクセスして直接確認することもできる。
+                    </p>
+                    <ul class="c-linkList u-mt-sp-24">
+                      <li>
+                        <a
+                          class="c-linkList__contents"
+                          href="https://beginner.kantan-cms-starter.com/column/post?id=microcms-service-settings"
+                          target="_blank"
+                          >microCMSとの連携</a
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">カスタマイズ</dt>
+                  <dd class="c-step__text">
+                    <p>
+                      持ち前のHTMLとCSSでサイトを自由にカスタマイズしよう。<br />好きな色にしたり、好きなレイアウトに変えたり、もちろんテキストを変えるだけでも。
+                    </p>
+                    <p>
+                      お問い合わせフォームの導入やmicroCMSのカスタマイズは別のページで紹介しているので、必要であれば見てほしい。
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">コンテンツの入稿・動作確認</dt>
+                  <dd class="c-step__text">
+                    <p>
+                      microCMSから記事を投稿してきちんと表示されるか確認しよう。<br />お問い合わせフォームの送受信テストやメタ情報周りの設定確認も忘れずに。
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <dl>
+                  <dt class="c-step__title">リリース</dt>
+                  <dd class="c-step__text">
+                    <p>ここまできたらいよいよ公開だ。</p>
+                    <p>
+                      サーバーはなんでも良いけどオススメはNetlifyやVercel。英語のサイトでジンマシンが出る人もいるかもしれないけど、小さいサイトであれば基本的にはずっと無料で使える。
+                    </p>
+                    <p>
+                      もちろん、すでに契約中のサーバーにFTPでアップロードしてもOK。
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="c-step__item">
+                <p class="c-step__title">
+                  おめでとう、サイトの完成だ。<br />だけどこれは終わりの始まり。たくさん運用して育ててほしい。
+                </p>
+              </li>
+            </ol>
+
+            <div class="u-text-center u-mt-sp-48 u-mt-tab-64">
+              <p>
+                このサイトと同じ機能＆デザインですぐにサイトが出来上がります！
+              </p>
+              <a
+                class="c-button c-button--external u-mt-sp-48"
+                href="https://templates.microcms.io/templates/detail/de25a5ff-5731-42b0-ac35-6fafdf7ff143"
+                target="_blank"
+                rel="noopener noreferrer"
+                >microCMSテンプレートへ</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- お知らせ -->
+        <section class="l-sectionPrimary l-sectionPrimary--bgSecondary">
+          <div class="l-container l-container--small">
+            <h2 class="l-headingPrimary">お知らせ</h2>
+            <div id="js-getNewsList"></div>
+            <div id="js-newsMoreButton"></div>
+          </div>
+        </section>
+
+        <!-- コラム -->
+        <section class="l-sectionPrimary">
+          <div class="l-container l-container--medium">
+            <h2 class="l-headingPrimary">お役立ちコラム</h2>
+            <div id="js-getColumnList"></div>
+            <div id="js-columnMoreButton"></div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="l-footer">
+        <div class="l-container">
+          <div class="l-footer__upper">
+            <p class="l-footer__logo">
+              <a href="/">
+                <img
+                  src="./assets/images/logo_large.svg"
+                  alt="KANTAN! CMS STARTER for Beginner"
+                  width="220"
+                  height="119"
+                />
+              </a>
+            </p>
+
+            <nav>
+              <div class="l-footer__sitemap">
+                <ul class="u-list-hyphen u-fz-sp-small">
+                  <li><a href="./about-functions/">機能紹介</a></li>
+                  <li><a href="./flow/">公開までの流れ</a></li>
+                  <li><a href="./column/">お役立ちコラム</a></li>
+                </ul>
+                <ul class="u-list-hyphen u-fz-sp-small">
+                  <li><a href="./news/">お知らせ</a></li>
+                  <li><a href="./contact/">お問い合わせ</a></li>
+                  <li><a href="./privacy-policy/">プライバシーポリシー</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <p class="l-footer__copyright">
+          <small>©︎ 2023 KANTAN! CMS STARTER All right reserved.</small>
+        </p>
+      </footer>
+      <!-- / footer -->
+    </div>
+  </body>
+</html>

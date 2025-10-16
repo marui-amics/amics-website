@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+  メインコンテンツ 設定用
+--------------------------------------------------------- */
+
+.l-main {
+  padding-top: 65px;
+  flex: 1;
+}
+
+.l-mainContents {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .l-mainContents {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

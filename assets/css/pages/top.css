@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+  TOPページ 独自スタイル
+--------------------------------------------------------- */
+
+/*
+  メインビジュアル
+---------------------------------------------- */
+.p-mainViual {
+  position: relative;
+}
+
+.p-mainViual__image {
+  width: 100%;
+}
+
+.p-mainViual__image img {
+  width: 100%;
+}
+
+.p-mainViual__text {
+  font-size: 5.33vw;
+  text-align: center;
+  font-weight: 900;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 64px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.p-mainViual__text span {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .p-mainViual {
+    padding-top: 40px;
+    width: 90%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p-mainViual__text {
+    font-size: 40px;
+    text-align: left;
+    line-height: 1.7;
+    left: 48px;
+    bottom: 48px;
+    transform: inherit;
+  }
+}
+
+/*
+  導入セクション
+---------------------------------------------- */
+.p-topIntroductionTextContents {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.p-topIntroductionTextContents p + p {
+  margin-top: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .p-topIntroductionTextContents {
+    font-size: 16px;
+  }
+}
+
+/*
+  特徴セクション
+---------------------------------------------- */
+/* 特徴リスト */
+.p-topFeatureList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-topFeatureHeading {
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
+
+  .p-topFeatureHeading__labelWrapper {
+    margin-top: -4px;
+  }
+
+  .p-topFeatureHeading__label {
+    font-size: 18px;
+    padding: 11px 16px;
+  }
+
+  /* 特徴リスト */
+  .p-topFeatureList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* 特徴リスト */
+  .p-topFeatureList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+/* 流れ */
+.p-topFlow .c-step__item::before {
+  font-family: "Titillium Web", sans-serif;
+}
+
+/*
+  シリーズセクション
+---------------------------------------------- */
+.p-topSeriesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-topSeriesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

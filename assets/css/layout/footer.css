@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+  フッターパーツ
+--------------------------------------------------------- */
+
+.l-footer {
+  background-color: var(--color-bg-footer);
+  padding-top: 48px;
+}
+
+.l-footer__upper {
+  display: grid;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+
+.l-footer__logo {
+  width: 50%;
+  max-width: 220px;
+}
+
+.l-footer__logo--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-footer__sitemap {
+  display: grid;
+  gap: 8px;
+}
+
+.l-footer__copyright {
+  font-size: 12px;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.l-footer__copyright small {
+  font-size: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .l-footer__sitemap {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .l-footer__upper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .l-footer__sitemap {
+    display: flex;
+    gap: 80px;
+  }
+}
