@@ -45,6 +45,7 @@
   .l-header__container {
     justify-content: space-between;
     align-items: center;
+    height: 100px;
   }
 }
 
@@ -143,9 +144,10 @@
   .l-headerMenuList {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 34px;
     width: auto;
     max-width: inherit;
+    height: 100px;
   }
 
   .l-headerMenuList__item--cta {
